@@ -1,0 +1,31 @@
+{
+  "name": "context-debugging",
+  "version": "0.0.1",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "clean": "rm -rf node_modules __lwr_cache__ site",
+    "dev": "lwr dev",
+    "dev:compat": "lwr dev --mode compat",
+    "build": "lwr build --clean",
+    "build:prod-compat": "lwr build --clean --mode prod-compat",
+    "start": "lwr start",
+    "stage": "npm run build && npm run start",
+    "stage:prod-compat": "npm run build:prod-compat && npm run start"
+  },
+  "dependencies": {
+    "@lwrjs/app-service": "^0.10.0",
+		"@lwrjs/lwc-module-provider": "^0.10.0",
+		"@lwrjs/npm-module-provider": "^0.10.0",
+    "@lwrjs/router": "^0.10.0",
+    "lwc": "3.0.0",
+    "lwr": "0.10.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "volta": {
+    "node": "18.16.1"
+  }
+}

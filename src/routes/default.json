@@ -1,0 +1,12 @@
+{
+	"routes": [
+		{
+			"id": "home",
+			"page": {
+				"type": "home"
+			},
+			"uri": "/",
+			"component": "example/app"
+		}
+	]
+}
